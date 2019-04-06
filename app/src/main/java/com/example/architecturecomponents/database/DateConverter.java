@@ -7,8 +7,8 @@ import androidx.room.TypeConverter;
 public class DateConverter {
 
     @TypeConverter
-    public static Date toDate(Long timestamp){
-        return timestamp == null ? null : new Date(timestamp);
+    public static Date toDate(Long timeStamp){
+        return timeStamp == null ? null : new Date(timeStamp);
     }
 
     @TypeConverter
